@@ -2,13 +2,12 @@ package linkedlists;
 
 public class Main {
     public static void main(String[] args) {
-        Node head = new Node(56);
-        Node second = new Node(30);
-        Node third = new Node(70);
-        head.next = second;
-        second.next = third;
-        third.next = null;
 
-        System.out.println(head.data + "\n" + second.data + "\n" + third.data);
+        LinkedListOperation list = new LinkedListOperation();
+        list.addFirst(70);
+        list.addFirst(30);
+        list.addFirst(56);
+        list.printList();
+
     }
 }
