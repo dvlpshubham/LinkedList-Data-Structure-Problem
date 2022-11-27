@@ -53,6 +53,12 @@ public class LinkedListOperation {
             }
         }
     }
+    public Node deleteHeadNode() {
+        System.out.println("Deleted node from start : " + head.data);
+        head = head.next;
+        return head;
+    }
+
 
     public void printList() {
         if (head == null) {

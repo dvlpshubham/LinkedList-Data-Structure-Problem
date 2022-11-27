@@ -5,8 +5,9 @@ public class Main {
 
         LinkedListOperation list = new LinkedListOperation();
         list.addFirst(70);
+        list.addFirst(30);
         list.addFirst(56);
-        list.addAtSpecificPosition(30, 2);
+        list.deleteHeadNode();
         list.printList();
 
     }
