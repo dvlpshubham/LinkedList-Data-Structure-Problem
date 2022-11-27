@@ -58,6 +58,20 @@ public class LinkedListOperation {
         head = head.next;
         return head;
     }
+    public void deleteLastNode() {
+
+        if (head == null || head.next == null) {
+            return;
+        }
+
+        Node currentHead = head;
+        while (currentHead.next.next != null) {
+            currentHead = currentHead.next;
+        }
+
+        currentHead.next = null;
+
+    }
 
 
     public void printList() {
