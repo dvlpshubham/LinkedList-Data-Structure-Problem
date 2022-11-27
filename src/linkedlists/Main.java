@@ -4,9 +4,9 @@ public class Main {
     public static void main(String[] args) {
 
         LinkedListOperation list = new LinkedListOperation();
-        list.addLast(70);
-        list.addLast(30);
-        list.addLast(56);
+        list.addFirst(70);
+        list.addFirst(56);
+        list.addAtSpecificPosition(30, 2);
         list.printList();
 
     }
